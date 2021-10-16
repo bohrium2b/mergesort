@@ -37,16 +37,16 @@ def merge(array1: List[int], array2: List[int]) -> List[int]:
     """
     This function merges two sorted arrays in sorted order.
     """
-    """print("Original Array 1: " + str(array1))
-    print("Original Array 2: " + str(array2))
-    print("=====MERGING=====")"""
+    # print("Original Array 1: " + str(array1))
+    # print("Original Array 2: " + str(array2))
+    # print("=====MERGING=====")
     # Final array
     finalarray = []
     # Look at start of each list and compare
     while array1 and array2:
-        """# Debugging
-        print("Array 1: " + str(array1))
-        print("Array 2: " + str(array2))"""
+        # # Debugging
+        # print("Array 1: " + str(array1))
+        # print("Array 2: " + str(array2))
         # Choose smallest number at start of array
         if array1[0] < array2[0]:
             # Array1's first is smaller
@@ -69,13 +69,13 @@ def merge(array1: List[int], array2: List[int]) -> List[int]:
             # Delete both
             array1.remove(array1[0])
             array2.remove(array2[0])
-        """print("Final array: " + str(finalarray))
-        print("=====")"""
+        # print("Final array: " + str(finalarray))
+        # print("=====")
     if array1:
         finalarray += array1
     elif array2:
         finalarray += array2
-    """print("=====END MERGE=====")
-    print("Final merged array: " + str(finalarray))
-    print("==========")"""
+    # print("=====END MERGE=====")
+    # print("Final merged array: " + str(finalarray))
+    # print("==========")
     return finalarray
