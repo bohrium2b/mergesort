@@ -1,5 +1,5 @@
 """
-This program defines a function to implement merge sort. 
+This program defines a function to implement merge sort.
 """
 from typing import List
 
