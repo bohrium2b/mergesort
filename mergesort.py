@@ -15,6 +15,9 @@ def sort(array: List[int]) -> List[int]:
     Usage:
     sort([1,3,9,4,8,5])
     """
+    # If array is of length 0
+    if len(array) == 0:
+        raise TypeError("Missing Argument")
     if len(array) == 1:
         # If array is only 1 element, it is sorted
         return array
